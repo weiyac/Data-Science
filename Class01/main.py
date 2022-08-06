@@ -90,9 +90,30 @@ print(np.sum(a, axis = 0))
 print(np.sum(a, axis = 1))"""
 
 # pandas
-import pandas as pd
+"""import pandas as pd
 data = pd.read_csv("https://raw.githubusercontent.com/KeithGalli/pandas/master/pokemon_data.csv")
 print(data.head())
 data = data.drop(columns=["#"])
 print(data.head())
-data.to_csv("pokemon.csv", index=False)
+data.to_csv("pokemon.csv", index=False)"""
+
+import matplotlib.pyplot as plt
+"""x=np.random.randint(low=-5, high=5, size=20)
+y=np.random.randint(low= -15, high=16, size=20)
+size=np.random.randint(low=50, high=300, size=20)
+colors=np.random.rand(20)
+plt.scatter(x, y, s=size, c=colors)
+plt.colorbar()
+plt.show()"""
+"""
+x=np.random.normal(loc=20, scale=10, size=200000)
+plt.hist(x, bins=100)
+plt.show()"""
+
+x=np.arange(-2*np.pi, 2*np.pi, 0.1)
+y=np.sin(2*x)
+print(x)
+print(y)
+plt.plot(x, y)
+#plt.scatter(x, y)
+plt.show()
